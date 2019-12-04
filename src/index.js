@@ -1,11 +1,11 @@
 'use strict';
 
-/*import "@babel/polyfill";
+import "@babel/polyfill";
 import 'nodelist-foreach-polyfill';
 import 'formdata-polyfill';
 import 'es6-promise';
-import 'fetch-polyfill';*/
+import 'fetch-polyfill';
 
-import slideMenu from './modules/slideMenu';
+import openPopUp from './modules/openPopUp';
 
-slideMenu();
+openPopUp();
