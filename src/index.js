@@ -7,5 +7,7 @@ import 'es6-promise';
 import 'fetch-polyfill';
 
 import openPopUp from './modules/openPopUp';
+import getSailAnchor from './modules/anchorScroll';
 
 openPopUp();
+getSailAnchor();
