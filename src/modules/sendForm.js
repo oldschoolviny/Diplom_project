@@ -22,7 +22,8 @@ const formsToSend = () => {
 
   const sendForm = (ourForm) => {
     const errorMessage = 'Что-то пошло не так...',
-      uncheckMessage = 'Необходимо подтвердить согласие на обработку данных!';
+        loadMessage = 'Загрузка...',
+        uncheckMessage = 'Необходимо подтвердить согласие на обработку данных!';
 
     const statusMessage = document.createElement('div');
     statusMessage.style.cssText = `
@@ -38,9 +39,9 @@ const formsToSend = () => {
       formData.forEach((val, key) => {
         body[key] = val;
       });
+      statusMessage.textContent = loadMessage;
 
       checkbox.toString();
-      console.log(checkbox);
 
       function klhjgg(ourCheckbox) {
         if (ourCheckbox) {
@@ -76,6 +77,12 @@ const formsToSend = () => {
       if (ourForm === footerForm) {
         klhjgg(checkbox[3].checked);
       }
+      if (ourForm === bannerForm) {
+        klhjgg(checkbox[0].checked);
+      }
+      if (ourForm === cardForm) {
+        klhjgg(checkbox[1].checked);
+      }
 
     });
 
@@ -92,6 +99,8 @@ const formsToSend = () => {
   sendForm(footerForm);
   sendForm(formOne);
   sendForm(formTwo);
+  sendForm(bannerForm);
+  sendForm(cardForm);
 };
 
 export default formsToSend;

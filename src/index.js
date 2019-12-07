@@ -13,11 +13,14 @@ import servicesSlider from './modules/servicesSlide';
 import gallerySlider from './modules/gallerySlider';
 import calc from './modules/calc';
 import getSailAnchor from './modules/getSailAnchor';
+import scrollTop from './modules/scrollTop';
+// import otherForm from './modules/otherForm';
 
 formsToSend();
 getSailAnchor();
 openPopUp();
-
+scrollTop();
+// otherForm();
 
 mainSlider();
 servicesSlider();

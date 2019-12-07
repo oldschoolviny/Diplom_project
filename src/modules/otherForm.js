@@ -4,7 +4,7 @@ const otherForm = () => {
         popupThanks = document.getElementById('thanks'),
         checkbox = document.querySelectorAll('.checkbox'),
         bodyFormEvent = document.body;
-        console.log(checkbox);
+ 
     bodyFormEvent.addEventListener('input', (event) => {
         let target = event.target;
 
@@ -36,8 +36,6 @@ const otherForm = () => {
             });
 
             checkbox.toString();
-            console.log(checkbox);
-
             function klhjgg(ourCheckbox) {
                 if (ourCheckbox) {
                     postData(body)
