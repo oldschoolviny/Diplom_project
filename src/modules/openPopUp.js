@@ -7,6 +7,7 @@ const openPopUp = () => {
     body.addEventListener('click', (event) => {
         let target = event.target;
 
+        console.log(target);
         popup.toString();
         if (target.matches('.open-popup')) {
             popup[1].style.display = 'block';
