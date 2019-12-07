@@ -14,7 +14,7 @@ import gallerySlider from './modules/gallerySlider';
 import calc from './modules/calc';
 import getSailAnchor from './modules/getSailAnchor';
 
-//formsToSend();
+formsToSend();
 getSailAnchor();
 openPopUp();
 
