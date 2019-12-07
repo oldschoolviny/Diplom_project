@@ -50,12 +50,12 @@
     <nav class="top-menu">
         <div class="wrapper">
             <ul class="hidden-small">
-                <li class="scroll"><a href="#clubs">Клубы</a></li>
-                <li class="scroll"><a href="#services">Услуги</a></li>
-                <li class="scroll"><a href="#cards">Клубные карты</a></li>
-                <li class=""><a href="#table">Расписание</a></li>
-                <li class="scroll"><a href="#gallery">Галерея</a></li>
-                <li class="scroll"><a href="#footer">Контакты</a></li>
+                <li class="scroll"><a class="scroll_link" href="#clubs">Клубы</a></li>
+                <li class="scroll"><a class="scroll_link" href="#services">Услуги</a></li>
+                <li class="scroll"><a class="scroll_link" href="#cards">Клубные карты</a></li>
+                <li class=""><a  class="scroll_link" href="#table">Расписание</a></li>
+                <li class="scroll"><a class="scroll_link" href="#gallery">Галерея</a></li>
+                <li class="scroll"><a class="scroll_link" href="#footer">Контакты</a></li>
             </ul>
             <div class="menu-button hidden-large">
                 <img src="images/menu-button.png" alt="">
@@ -67,18 +67,18 @@
             <img src="images/delete.png" alt="">
         </div>
         <ul>
-            <li class="scroll"><a href="#clubs">Клубы</a></li>
-            <li class="scroll"><a href="#services">Услуги</a></li>
-            <li class="scroll"><a href="#cards">Клубные карты</a></li>
-            <li class=""><a href="#table">Расписание</a></li>
-            <li class="scroll"><a href="#gallery">Галерея</a></li>
-            <li class="scroll"><a href="#footer">Контакты</a></li>
+            <li class="scroll"><a class="scroll_link" href="#clubs">Клубы</a></li>
+            <li class="scroll"><a class="scroll_link" href="#services">Услуги</a></li>
+            <li class="scroll"><a class="scroll_link" href="#cards">Клубные карты</a></li>
+            <li class=""><a class="scroll_link" href="#table">Расписание</a></li>
+            <li class="scroll"><a class="scroll_link" href="#gallery">Галерея</a></li>
+            <li class="scroll"><a class="scroll_link" href="#footer">Контакты</a></li>
         </ul>
     </nav>
     <div class="head-slider">
         <div class="wrapper">
             <div class="main-slider">
-                <div class="slide">
+                <div class="slide main-slide">
                     <div class="slide-text">
                         <div class="offer-head">
                             <p class="top">2 круглосуточные</p>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide type2" style="display: none">
+                <div class="slide type2 main-slide" style="display: none">
                     <div class="slide-text">
                         <div class="offer-head">
                             <p class="top">открытый чемпионат</p>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide" style="display: none">
+                <div class="slide main-slide" style="display: none">
                     <div class="slide-text">
                         <div class="offer-head">
                             <p class="top">без выходных</p>
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide type2 type3" style="display: none">
+                <div class="slide type2 type3 main-slide" style="display: none">
                     <div class="slide-text">
                         <div class="offer-head">
                             <p class="top">Круглосуточно</p>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide type2"  style="display: none">
+                <div class="slide type2 main-slide" style="display: none">
                     <div class="slide-text">
                         <div class="offer-head">
                             <p class="top">Пробное занятие</p>
@@ -303,12 +303,12 @@
                 </div>
                 <div class="right">
                     <input type="hidden" name="form_name" value="Заказать карту">
-                    <p class="input-text"><input name="name" type="text" required placeholder="Ваше имя..."></p>
-                    <p class="input-text"><input type="tel" name="phone" id="callback_form-phone" required
+                    <p class="input-text"><input class="name_input" name="name" type="text" required placeholder="Ваше имя..."></p>
+                    <p class="input-text"><input class="phone_input" type="tel" name="phone" id="callback_form-phone" required
                                                  placeholder="Ваш номер телефона..."></p>
                     <div class="form-bottom">
                         <p class="personal-data">
-                            <input type="checkbox" required id="card_check"><label for="card_check">Я согласен на
+                            <input type="checkbox" class="checkbox" id="card_check"><label for="card_check">Я согласен на
                             обработку персональных данных</label>
                         </p>
                         <p class="submit">
@@ -323,80 +323,100 @@
 <section id="gallery">
     <h2>Фотогалерея</h2>
     <div class="gallery-bg">
-        <div class="wrapper">
+        <div class="wrapper" id="servicesWrap" style="position: relative">
             <div class="gallery-slider">
-                <div class="slide">
+                <div class="slide gallery-slide">
                     <img src="images/gallery/photo1.jpg" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide gallery-slide" style="display: none">
                     <img src="images/gallery/photo2.jpg" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide gallery-slide" style="display: none">
                     <img src="images/gallery/photo3.jpg" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide gallery-slide" style="display: none">
                     <img src="images/gallery/photo4.jpg" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide gallery-slide" style="display: none">
                     <img src="images/gallery/photo5.jpg" alt="">
+                </div>
+                <div class="slider-arrow prev">
+                    <span>
+                        <i class="fa fa-angle-left"></i>
+                    </span>
+                </div>
+                <div class="slider-arrow next">
+                    <span>
+                        <i class="fa fa-angle-right"></i>
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section id="services">
-    <div class="wrapper">
+    <div class="wrapper" id="servicesWrap" style="position: relative">
         <h2>услуги наших клубов</h2>
         <div class="services-slider">
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/akva.jpg" alt="Аква территория">
                 <h6>Аква территория</h6>
                 <p>Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/vesy.jpg" alt="Зона свободных весов">
                 <h6>Зона свободных весов</h6>
                 <p>Здесь есть всё необходимое, чтобы достичь максимальных результатов</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/TRX.jpg" alt="Зона TRX">
                 <h6>Зона TRX</h6>
                 <p>Укрепление суставов и связок, увеличение мышечной массы, выносливости и гибкости</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/kardio.jpg" alt="Кардиозона">
                 <h6>Кардиозона</h6>
                 <p>Эффективное снижение веса и улучшение работы сердечно-сосудистой системы</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/yoga.jpg" alt="Йога">
                 <h6>Йога</h6>
                 <p>Йога - идеальны не только физическая форма, но и эмоциональное состояние</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/akva.jpg" alt="Аква территория">
                 <h6>Аква территория</h6>
                 <p>Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/vesy.jpg" alt="Зона свободных весов">
                 <h6>Зона свободных весов</h6>
                 <p>Здесь есть всё необходимое, чтобы достичь максимальных результатов</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/TRX.jpg" alt="Зона TRX">
                 <h6>Зона TRX</h6>
                 <p>Укрепление суставов и связок, увеличение мышечной массы, выносливости и гибкости</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/kardio.jpg" alt="Кардиозона">
                 <h6>Кардиозона</h6>
                 <p>Эффективное снижение веса и улучшение работы сердечно-сосудистой системы</p>
             </div>
-            <div class="slide">
+            <div class="slide services-slide">
                 <img src="images/services-slider/yoga.jpg" alt="Йога">
                 <h6>Йога</h6>
                 <p>Йога - идеальны не только физическая форма, но и эмоциональное состояние</p>
+            </div>
+            <div class="slider-arrow prev">
+                <span>
+                    <i class="fa fa-angle-left"></i>
+                </span>
+            </div>
+            <div class="slider-arrow next">
+                <span>
+                    <i class="fa fa-angle-right"></i>
+                </span>
             </div>
         </div>
     </div>
@@ -409,9 +429,9 @@
                 <input type="hidden" name="form_name" value=" Записаться на визит">
                 <input name="name" type="text" required placeholder="Ваше имя...">
                 <input type="tel" name="phone" id="phone" required placeholder="Ваш номер телефона...">
-                <button name="send" class="btn" type="submit">Записаться</button>
+                <button id="bunner-btn" name="send" class="btn" type="submit">Записаться</button>
                 <p class="personal-data">
-                    <input type="checkbox" required id="check1"><label for="check1">Я согласен на обработку персональных
+                    <input type="checkbox" class="checkbox"  id="check1"><label for="check1">Я согласен на обработку персональных
                     данных</label>
                 </p>
             </form>
@@ -453,14 +473,14 @@
                         <div class="choose-club">
                             <h5>Выбрать клуб</h5>
                             <div class="club">
-                                <input type="radio" id="footer_leto_mozaika" name="club-name" value="mozaika"><label
+                                <input type="radio" class="checkbox" id="footer_leto_mozaika" name="club-name" value="mozaika"><label
                                     for="footer_leto_mozaika">
                                 <h6>Тело «Мозаика»</h6>
                                 <p>Россия, Москва, 7-я Кожуховская ул.,&nbsp;9</p>
                             </label>
                             </div>
                             <div class="club">
-                                <input type="radio" id="footer_leto_schelkovo" name="club-name" value="schelkovo"><label
+                                <input type="radio" class="checkbox" id="footer_leto_schelkovo" name="club-name" value="schelkovo"><label
                                     for="footer_leto_schelkovo">
                                 <h6>Тело «Щелково»</h6>
                                 <p>Россия, г. Щелково, ул. Советская, д.&nbsp;16</p>
@@ -470,7 +490,7 @@
                         <div class="call">
                             <p>Единый телефон</p>
                             <p class="tel">+7 (800) 555-64-47</p>
-                            <p class="input-text"><input type="tel" name="phone" id="callback_footer_form-phone"
+                            <p class="input-text"><input class="phone_input" type="tel" name="phone" id="callback_footer_form-phone"
                                                          required="" placeholder="Ваш номер телефона..."></p>
                             <button class="btn callback-btn" type="submit" data-popup="#callback_form">Перезвоните мне
                             </button>
@@ -516,11 +536,11 @@
                 <h4>Обратный звонок</h4>
                 <input type="hidden" name="form_name" value=" Обратный звонок">
                 <!--  <input type="hidden" name="club" value="<?=$_GET['club-name']?>"> -->
-                <p class="input-text"><input name="name" type="text" required placeholder="Ваше имя..."></p>
-                <p class="input-text"><input type="tel" name="phone" id="callback_form1-phone" required
+                <p class="input-text"><input class="name_input" name="name" type="text" required placeholder="Ваше имя..."></p>
+                <p class="input-text"><input class="phone_input" type="tel" name="phone" id="callback_form1-phone" required
                                              placeholder="Ваш номер телефона..."></p>
                 <p class="personal-data">
-                    <input type="checkbox" required id="check"><label for="check">Я согласен на обработку <br>персональных
+                    <input type="checkbox" class="checkbox" id="check"><label for="check">Я согласен на обработку <br>персональных
                     данных</label>
 
                 </p>
@@ -541,11 +561,11 @@
             <form name="free-visit-form" id="form2" action="#" method="post">
                 <h4>Записаться на визит</h4>
                 <input type="hidden" name="form_name" value=" Записаться на визит">
-                <p class="input-text"><input name="name" type="text" required placeholder="Ваше имя..."></p>
-                <p class="input-text"><input type="tel" name="phone" id="callback_form2-phone" required
+                <p class="input-text"><input class="name_input" name="name" type="text" required placeholder="Ваше имя..."></p>
+                <p class="input-text"><input class="phone_input" type="tel" name="phone" id="callback_form2-phone" required
                                              placeholder="Ваш номер телефона..."></p>
                 <p class="personal-data">
-                    <input type="checkbox" required id="check2"><label for="check2">Я согласен на обработку <br>персональных
+                    <input type="checkbox" class="checkbox" id="check2"><label for="check2">Я согласен на обработку <br>персональных
                     данных</label>
 
                 </p>

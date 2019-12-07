@@ -6,8 +6,7 @@ const openPopUp = () => {
 
     body.addEventListener('click', (event) => {
         let target = event.target;
-        
-        console.log(target);
+
         popup.toString();
         if (target.matches('.open-popup')) {
             popup[1].style.display = 'block';
@@ -19,7 +18,7 @@ const openPopUp = () => {
         if (target.closest('.fixed-gift')) {
             const gift = document.querySelector('.fixed-gift');
             gift.style.display = 'none';
-            popup[3].style.display = 'block';
+            popup[2].style.display = 'block';
         }
 
         if (target.classList.contains('close_icon') || target.matches('.overlay') || target.matches('.close-btn')) {
@@ -30,9 +29,6 @@ const openPopUp = () => {
         }
         if (target.classList.contains('close_icon') || target.matches('.overlay') || target.matches('.close-btn')) {
             popup[2].style.display = 'none';
-        }
-        if (target.classList.contains('close_icon') || target.matches('.overlay') || target.matches('.close-btn')) {
-            popup[3].style.display = 'none';
         }
 
         if (target = target.closest('.club-select')){

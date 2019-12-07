@@ -7,7 +7,20 @@ import 'es6-promise';
 import 'fetch-polyfill';
 
 import openPopUp from './modules/openPopUp';
-import getSailAnchor from './modules/anchorScroll';
+//import formsToSend from './modules/sendForm';
+import mainSlider from './modules/mainSlider';
+// import servicesSlider from './modules/servicesSlider';
+import gallerySlider from './modules/gallerySlider';
+import calc from './modules/calc';
+import getSailAnchor from './modules/getSailAnchor';
 
-openPopUp();
+//formsToSend();
 getSailAnchor();
+openPopUp();
+
+
+mainSlider();
+// servicesSlider();
+gallerySlider();
+
+calc();
