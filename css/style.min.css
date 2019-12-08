@@ -2389,7 +2389,7 @@ p.personal-data input[type=checkbox]:checked+label:before {
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
 
     html,
     body {
@@ -2401,7 +2401,7 @@ p.personal-data input[type=checkbox]:checked+label:before {
     }
 
     .hidden-large {
-        display: block
+        display: block;
     }
 
     header {

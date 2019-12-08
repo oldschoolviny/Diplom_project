@@ -15,11 +15,13 @@ import calc from './modules/calc';
 import getSailAnchor from './modules/getSailAnchor';
 import scrollTop from './modules/scrollTop';
 // import otherForm from './modules/otherForm';
+import burgerMenu from './modules/burgerMenu';
 
 formsToSend();
 getSailAnchor();
 openPopUp();
 scrollTop();
+burgerMenu();
 // otherForm();
 
 mainSlider();
