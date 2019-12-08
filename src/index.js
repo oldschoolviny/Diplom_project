@@ -6,6 +6,8 @@ import 'formdata-polyfill';
 import 'es6-promise';
 import 'fetch-polyfill';
 
+import headMenu from './modules/headMenu';
+// 
 import openPopUp from './modules/openPopUp';
 import formsToSend from './modules/sendForm';
 import mainSlider from './modules/mainSlider';
@@ -17,6 +19,7 @@ import scrollTop from './modules/scrollTop';
 // import otherForm from './modules/otherForm';
 import burgerMenu from './modules/burgerMenu';
 
+headMenu();
 formsToSend();
 getSailAnchor();
 openPopUp();
