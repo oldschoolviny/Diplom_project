@@ -2675,3 +2675,10 @@ p.personal-data input[type=checkbox]:checked+label:before {
 .active {
     display: block;
 }
+
+.fixed-menu__button {
+    top: 0;
+    right: 10px;
+    position: fixed;
+    z-index: 999999;
+}
