@@ -18,6 +18,7 @@ const otherForm = () => {
 
     const sendForm = (ourForm) => {
         const errorMessage = 'Что-то пошло не так...',
+            loadMessage = 'Загрузка...',
             uncheckMessage = 'Необходимо подтвердить согласие на обработку данных!';
 
         const statusMessage = document.createElement('div');
@@ -34,6 +35,7 @@ const otherForm = () => {
             formData.forEach((val, key) => {
                 body[key] = val;
             });
+            statusMessage.textContent = loadMessage;
 
             checkbox.toString();
             function klhjgg(ourCheckbox) {

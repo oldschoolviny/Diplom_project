@@ -3,13 +3,14 @@ const burgerMenu = () =>{
         menu = document.querySelector('.popup-menu'),
         closeBtn = document.querySelector('.close-menu-btn');
 
-    //     let fat = document.documentElement.clientWidth;
-    //     if(fat <= 768){
-    //         menuBtn.hidden({
-    //         position: 'fixed',
-    //         top: '0'
-    //     });
-    // };
+        let fat = document.documentElement.clientWidth;
+        if(fat >= 768){
+            menuBtn.style.cssText = `
+            position: fixed;
+            display: inline;
+            top: 0px;
+            `;
+        }
 
         const activeBurger = () => {
             if(!menu.style.display || menu.style.display === 'none'){
