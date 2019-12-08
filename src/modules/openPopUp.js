@@ -31,9 +31,9 @@ const openPopUp = () => {
         if (target.classList.contains('close_icon') || target.matches('.overlay') || target.matches('.close-btn')) {
             popup[3].style.display = 'none';
         }
-        if (target.classList.contains('close_icon') || target.matches('.overlay')) {
-            popup[2].style.display = 'none';
-        }
+        // if (target.classList.contains('close_icon') || target.matches('.overlay')) {
+        //     popup[2].style.display = 'none';
+        // }
         // if (target.classList.contains('close_icon') || target.matches('.overlay')) {
         //     popup[0].style.display = 'none';
         // }

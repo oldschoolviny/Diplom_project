@@ -42,6 +42,7 @@ const formsToSend = () => {
       statusMessage.textContent = loadMessage;
 
       checkbox.toString();
+
       function klhjgg(ourCheckbox) {
         if (ourCheckbox) {
           postData(body)
@@ -65,17 +66,17 @@ const formsToSend = () => {
         }
       }
       if (ourForm === formOne) {
-        klhjgg(checkbox[4].checked);
+        klhjgg(checkbox[2].checked);
       }
       if (ourForm === formTwo) {
-        klhjgg(checkbox[5].checked);
+        klhjgg(checkbox[3].checked);
       }
-      // if (ourForm === footerForm) {
-      //   klhjgg(checkbox[2].checked);
-      // }
-      // if (ourForm === footerForm) {
-      //   klhjgg(checkbox[3].checked);
-      // }
+      if (ourForm === footerForm) {
+        klhjgg(checkbox[2].checked);
+      }
+      if (ourForm === footerForm) {
+        klhjgg(checkbox[3].checked);
+      }
       if (ourForm === bannerForm) {
         klhjgg(checkbox[0].checked);
       }
@@ -95,7 +96,7 @@ const formsToSend = () => {
       });
     };
   };
-  // sendForm(footerForm);
+  sendForm(footerForm);
   sendForm(formOne);
   sendForm(formTwo);
   sendForm(bannerForm);

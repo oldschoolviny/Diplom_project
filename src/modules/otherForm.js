@@ -2,6 +2,8 @@ const otherForm = () => {
     const bannerForm = document.getElementById('banner-form'),
         cardForm = document.getElementById('card_order'),
         popupThanks = document.getElementById('thanks'),
+        formOne = document.getElementById('form1'),
+        formTwo = document.getElementById('form2'),
         checkbox = document.querySelectorAll('.checkbox'),
         bodyFormEvent = document.body;
  
@@ -38,6 +40,7 @@ const otherForm = () => {
             statusMessage.textContent = loadMessage;
 
             checkbox.toString();
+            
             function klhjgg(ourCheckbox) {
                 if (ourCheckbox) {
                     postData(body)
@@ -66,6 +69,12 @@ const otherForm = () => {
             if (ourForm === cardForm) {
                 klhjgg(checkbox[0].checked);
             }
+            if (ourForm === formOne) {
+                klhjgg(checkbox[2].checked);
+              }
+              if (ourForm === formTwo) {
+                klhjgg(checkbox[3].checked);
+              }
 
         });
 
