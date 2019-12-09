@@ -23,7 +23,6 @@ const servicesSlider = (minWidth = 222) => {
     currentWidth += +changeSlide;
 
     if (currentWidth <= 6) {
-      console.log(currentWidth);
       currentWidth = 4;
       slide[0].style.marginLeft = `-${currentWidth}px`;
       currentWidth = 0;

@@ -7,7 +7,7 @@ import 'es6-promise';
 import 'fetch-polyfill';
 
 import headMenu from './modules/headMenu';
-// 
+
 import openPopUp from './modules/openPopUp';
 import formsToSend from './modules/sendForm';
 import mainSlider from './modules/mainSlider';
@@ -16,7 +16,7 @@ import gallerySlider from './modules/gallerySlider';
 import calc from './modules/calc';
 import getSailAnchor from './modules/getSailAnchor';
 import scrollTop from './modules/scrollTop';
-// import otherForm from './modules/otherForm';
+
 import burgerMenu from './modules/burgerMenu';
 
 headMenu();
@@ -25,7 +25,6 @@ getSailAnchor();
 openPopUp();
 scrollTop();
 burgerMenu();
-// otherForm();
 
 mainSlider();
 servicesSlider();
